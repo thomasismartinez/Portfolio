@@ -1,0 +1,279 @@
+#workFlow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px
+}
+
+.item {
+    text-align: center;
+    cursor: pointer;
+    width: 70%;
+    position: relative;
+}
+
+.item h2 {
+    text-align: center;
+    z-index: 2;
+    font-weight: 100;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: black;
+    opacity: 75%;
+    width: 100%;
+    font-size: 1.5em;
+    margin: 0 0 20px 0;
+}
+
+.item h3 {
+    z-index: 2;
+    font-weight: 100;
+    padding: 5px;
+    border-radius: 3px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: white;
+    background-color: black;
+    opacity: 75%;
+    width: 100%;
+    font-size: 1.1em;
+    text-align: left;
+    margin: 0;
+    width: fit-content; 
+}
+
+.preview {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+/*panels*/
+.panel {
+    /*hide/show display*/
+    /*display: none;*/
+    position: fixed;
+    z-index: 4;
+    height: 0;
+    width: 100%;
+    bottom: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    padding: 0;
+    /*content styling*/
+    color: white;
+    text-align: left;
+}
+
+.closebtn {
+    width: 100%;
+    height: 3em;
+    line-height: 3em;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    position: sticky;
+}
+
+.panel h1 {
+    display: block;
+    text-align: center;
+    margin: 15px 30px;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.panel h2 {
+    font-size: 2em;
+    text-align: left;
+    margin: 5px 25px;
+}
+
+.project-info-banner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skills-used {
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.github-link {
+    background-color: white;
+    border-radius: 10px;
+    height: fit-content;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+}
+
+.github-link img {
+    width: 30px;
+    padding: 10px;
+}
+
+.github-link span {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.github-link a {
+    color: black;
+}
+
+.projectBody p {
+    margin: 5px 35px;
+    line-height: 1.7em;
+}
+
+.projectBody a {
+    text-decoration: underline;
+}
+
+.projectImgHor, .projectImgVer, .projectImgSqr {
+    display: block;
+    width: 85%;
+    margin: 20px auto;
+}
+
+.projectBody iframe {
+    width: 90%;
+}
+
+.projectBody .pdf {
+    width: 90%;
+    height: 100vh;
+}
+
+.img-spread-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.img-spread {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.img-spread-item {
+    width: 100px;
+}
+
+@media only screen and (min-width: 600px) {
+
+    #workFlow {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .item {
+        cursor: pointer;
+        width: 25%;
+        z-index: 0;
+        transition: .2s ease-in-out;
+    }
+
+    .item:hover {
+        scale: 1.1;
+        z-index: 1;
+    }
+
+    .item h2 {
+        opacity: 0;
+        font-size: 1.5em;
+        font-weight: light;
+    }
+
+    .item:hover h2 {
+        animation: fadeInAnimation ease .3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    .item h3 {
+        opacity: 0;
+        font-size: 1em;
+        font-weight: light;
+    }
+
+    .item:hover h3 {
+        animation: fadeInAnimation ease .3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: .90;
+        }
+    }
+
+    .panel {
+        font-size: 1.5em;
+    }
+
+    .panel h1 {
+        font-size: 4em;
+        margin: 50px 60px;
+    }
+
+    .panel h2 {
+        font-size: 1.6em;
+        margin: 20px 120px;
+        font-weight: bold;
+    }
+
+    .panel p{
+        margin: 40px 150px;
+    }
+
+    .project-info-banner {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .skills-used {
+        width: fit-content;
+    }
+
+    .projectImgSqr {width: 50%;}
+    .projectImgHor {width: 70%;}
+    .projectImgVer {width: 40%;}
+
+    .projectBody iframe {
+        height: 90vh;
+    }
+
+    .projectBody .pdf {
+        width: 30%;
+        height: 100vh;
+    }
+
+    .img-spread {
+        width: 70%;
+    }
+
+    .img-spread-item {
+        width: 250px;
+    }
+}

@@ -1,0 +1,146 @@
+* { margin: 0; }
+
+body {
+    /*general text stylings*/
+    color: #edf2f4;
+    text-align: center;
+
+    /*slideshow background*/
+    width: 100%;
+    height: 100vh;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: slideBg 30s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url('../media/indexSlideShowM/1.png');
+}
+@keyframes slideBg {
+    0% { background-image: url('../media/indexSlideShowM/1.png') }
+    16% { background-image: url('../media/indexSlideShowM/1.png') }
+    33% { background-image: url('../media/indexSlideShowM/2.png') }
+    49% { background-image: url('../media/indexSlideShowM/2.png') }
+    66% { background-image: url('../media/indexSlideShowM/3.png') }
+    82% { background-image: url('../media/indexSlideShowM/3.png') }
+    100% { background-image: url('../media/indexSlideShowM/1.png') }
+}
+
+/* dark cover makes background more of a backdrop*/
+#cover {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-color: black;
+    opacity: 0.8;
+}
+
+/* contact card */
+#landInfo { padding-top: 10vh; }
+/*h1 {
+    font-size: 2.7em;
+    margin-bottom: 5vh;
+}*/
+#wordmark  {
+    width: 80%;
+    margin: 3vh 0 1vh 0;
+}
+h2 {
+    font-size: 1.2em; 
+    margin-bottom: 3vh;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* page cards */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav a {
+    margin: 7px;
+    height: 10vh;
+    line-height: 10vh;
+    width: 80%;
+    text-decoration: none;
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.5em;
+    background-color: #edf2f4;
+}
+
+/*MAKE TABLET VIEW*/
+
+
+/* Desktop View */
+@media only screen and (min-width: 900px) {
+
+    body {
+        background-image: url('../media/indexSlideShow/1.png');
+    }
+    @keyframes slideBg {
+        0% { background-image: url('../media/indexSlideShow/1.png') }
+        16% { background-image: url('../media/indexSlideShow/1.png') }
+        33% { background-image: url('../media/indexSlideShow/222.png') }
+        49% { background-image: url('../media/indexSlideShow/222.png') }
+        66% { background-image: url('../media/indexSlideShow/33.png') }
+        82% { background-image: url('../media/indexSlideShow/33.png') }
+        100% { background-image: url('../media/indexSlideShow/1.png') }
+    }
+
+    /* contact card */
+    /*h1 {
+        font-size: 7vw;
+        margin-bottom: 7vh;
+    }*/
+    #wordmark {
+        width: 60%;
+        margin-bottom: 0;
+    }
+    h2 {
+        font-size: 1.5vw; 
+        margin-bottom: .5vw;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+    }
+
+    /* page cards */
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+    nav a { 
+        margin: 20px;
+        transition: all .3s ease-in-out; 
+        height: 13vh;
+        line-height: 13vh;
+        width: 20vw;
+        background-position: center;
+        border-radius: 10px;
+        font-size: 2em;
+    }
+
+    /* page card transitions */
+    nav a:hover {
+        transform: scale(1.2);
+        border-radius: 0;
+        font-size: 2.3em;
+        border-radius: 3px;
+        background-color: #555555;
+        color: white;
+        font-weight: bold;
+    }
+    /*
+    #workCard:hover { background-image: url('../media/indexPageCards/spiral.gif'); }
+    #resumeCard:hover { background-image: url('../media/indexPageCards/spiral.gif'); }
+    #aboutCard:hover { background-image: url('../media/indexPageCards/spiral.gif'); }
+    */
+  }

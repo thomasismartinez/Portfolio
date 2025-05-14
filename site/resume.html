@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Resume</title>
+    <link rel="stylesheet" href="assets/styles/universalStyles.css">
+    <link rel="stylesheet" href="assets/styles/resumeStyles.css">
+    <script src="assets/src/main.js"></script>
+    <script src="assets/src/canvas.js" type="module"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/media/branding/icon.png">
+</head>
+<body>
+
+    <!--topbar (wordmark/nav)-->
+    <div class="navbar">
+        <a class="wordMarkLink" href="index.html">
+            <img src="assets/media/branding/lockupB.png">
+        </a>
+
+        <div class="dropdown">
+            <label for="touch" onclick="hamburgerx()"><span id="headLink">Resume ≡</span></label>               
+            <input type="checkbox" id="touch"> 
+            <div class="slide">
+                <a href="mywork.html">Portfolio</a>
+                <a href="aboutme.html">About&nbspMe</a>
+            </div>
+        </div>
+
+        <a class="page" href="mywork.html">Portfolio</a>
+        <a class="page active" href="resume.html">Resume</a>
+        <a class="page" href="aboutme.html">About&nbspMe</a>
+    </div>
+
+    <div class="main">
+        <embed id="resumePDF" src="assets/media/martinez-thomas-resume.pdf#toolbar=0&navpanes=0&view=Fit&scrollbar=0">
+        <h2><a id="pdfExpand" href="assets/media/martinez-thomas-resume.pdf" target="_blank">Download <img style="display:inline-block" src="assets/media/linkIcon.png"></a></h2>
+    </div>
+
+    <canvas></canvas>
+</body>
+</html>

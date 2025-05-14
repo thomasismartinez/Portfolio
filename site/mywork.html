@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/styles/universalStyles.css">
+    <link rel="stylesheet" href="assets/styles/workStyles.css">
+    <script src="assets/src/main.js"></script>
+    <script src="assets/src/canvas.js" type="module"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/media/branding/icon.png">
+</head>
+<body>
+
+    <!--header-->
+    <div class="navbar">
+        <a class="wordMarkLink" href="index.html">
+            <img src="assets/media/branding/lockupB.png">
+        </a>
+
+        <div class="dropdown">
+            <label for="touch" onclick="hamburgerx()"><span id="headLink">Portfolio ≡</span></label>               
+            <input type="checkbox" id="touch"> 
+            <div class="slide">
+                <a href="resume.html">Resume</a>
+                <a href="aboutme.html">About&nbspMe</a>
+            </div>
+        </div>
+
+        <a class="page active" href="mywork.html">Portfolio</a>
+        <a class="page" href="resume.html">Resume</a>
+        <a class="page" href="aboutme.html">About&nbspMe</a>
+    </div>
+
+    <div class="main">
+        
+        <!---
+        <div class="item" onclick="openPanel( document.getElementById('') )">
+            <h3>skill<br>skill</h3>
+            <img class="preview" src="work//.">
+            <h2>Title</h2>
+        </div>
+        --->
+
+        <!--<h2>Catagory</h2>-->
+
+        <!-- display of work previews -->
+        <div id="workFlow">
+
+            <!-- capstone -->
+            <div class="item" onclick="openPanel( document.getElementById('capstone') )">
+                <h3><span style="color:gold">In Production</span><br>Team Project<br>UI/UX<br>Physical Interface<br>Exhibit Design</h3>
+                <img class="preview" src="work/capstone/capstonePreview.jpg">
+                <h2>Eye On the Prize</h2>
+            </div>
+
+            <!-- protein -->
+            <div class="item" onclick="openPanel( document.getElementById('protein') )">
+                <h3>Physical Interface<br>Team Project<br>Exhibit Design</h3>
+                <img class="preview" src="work/protein/proteinPreview.png">
+                <h2>Protein-4</h2>
+            </div>
+
+            <!-- splat -->
+            <div class="item" onclick="openPanel( document.getElementById('splat') )">
+                <h3>Team Production<br>Developer<br>UI/UX</h3>
+                <img class="preview" src="work/splat/splatPreview.png">
+                <h2>Splat World</h2>
+            </div>
+
+            <!-- scribble -->
+            <div class="item" onclick="openPanel( document.getElementById('scribble') )">
+                <h3>Web Dev<br>Web Server<br>Database</h3>
+                <img class="preview" src="work/scribble/scribblePreview.png">
+                <h2>Scribble Club</h2>
+            </div>
+
+            <!-- Audio Visualizer -->
+            <div class="item" onclick="openPanel( document.getElementById('audio') )">
+                <img class="preview" src="work/audioVis/audioPreview.png">
+                <h3>Web Dev<br>Music<br>Audio</h3>
+                <h2>Audio Visualizer</h2>
+            </div>
+
+            <!--- mug --->
+            <div class="item" onclick="openPanel( document.getElementById('mug') )">
+                <img class="preview" src="work/mug/justLockup.png">
+                <h3>Graphic Design<br>Branding</h3>
+                <h2>MUG Branding</h2>
+            </div> 
+
+            <!-- jd -->
+            <div class="item" onclick="openPanel( document.getElementById('jd') )">
+                <img class="preview" src="work/jd/jdPreview.png">
+                <h3>UI/UX<br>Graphic Design<br>Mockup</h3>
+                <h2>Jelly Donut</h2>
+            </div> 
+
+            <!-- sleep 
+            <div class="item" onclick="openPanel( document.getElementById('sleep') )">
+                <img class="preview" src="work/sleep/SleepAdPreview2.png">
+                <h3>Graphic Design<br>Adobe Illustrator</h3>
+                <h2>Social Issue Ad</h2>
+            </div> -->
+            
+
+            <!--- signs 
+            <div class="item" onclick="openPanel( document.getElementById('signs') )">
+                <img class="preview" src="work/signs/signsPreview.png">
+                <h3>Graphic Design<br>Adobe Illustrator</h3>
+                <h2>Lawncare Zodiacs</h2>
+            </div> -->
+
+            <!-- brick 
+            <div class="item" onclick="openPanel( document.getElementById('brick') )">
+                <h3>C#<br>UI/UX<br>Team Project</h3>
+                <img class="preview" src="work/brick/brickPv.png">
+                <h2>Brick Bulletin</h2>
+            </div> -->
+
+            <!-- concert 
+            <div class="item" onclick="openPanel( document.getElementById('concert') )">
+                <img class="preview" src="work/concert/concertPreview.png">
+                <h3>UI/UX<br>Adobe Illustrator</h3>
+                <h2>Concert Website</h2>
+            </div> -->
+            
+
+            <!-- apitaph 
+            <div class="item" onclick="openPanel( document.getElementById('apitaph') )">
+                <img class="preview" src="work/apitaph/ApitaphPreview.png">
+                <h3>Graphic Design<br>Adobe Photoshop</h3>
+                <h2>Hardcore Collage</h2>
+            </div> -->
+            
+
+            <!-- caiman 
+            <div class="item" onclick="openPanel( document.getElementById('caiman') )">
+                <img class="preview" src="work/caiman/caimanPreview.jpg">
+                <h3>Cosplay<br>Craft</h3>
+                <h2>Caiman Cosplay</h2>
+            </div> -->
+
+            <!-- phyllo -->
+            <div class="item" onclick="openPanel( document.getElementById('phyllo') )">
+                <h3>Web App</h3>
+                <img class="preview" src="work/phyllo/phylloPreview.png">
+                <h2>Phyllotaxis Zones</h2>
+            </div> 
+            
+        </div>
+        
+    </div>
+
+    <!-- Panels -->
+
+    <!--
+    <div class="panel" id="">
+        <div class="closebtn" onclick="closePanel(document.getElementById(''))">× Close ×</div>
+        <div class="projectBody">
+            <h1>Title</h1>
+            <p class="skills-used">
+                
+                •&nbsp&nbsp&nbsp
+                •&nbsp&nbsp&nbsp
+                •&nbsp
+            </p>
+            <p>
+                <a href="https://github.com" class="github-link">
+                    <img src="assets/media/github-logo.png">
+                    <span>Project Github</span>
+                </a>
+            </p>
+            <img class="" src="work//">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div class="closebtn" onclick="closePanel(document.getElementById(''))">× Close ×</div>
+    </div>
+    -->
+
+    <!-- capstone -->
+    <div class="panel" id="capstone">
+        <div class="closebtn" onclick="closePanel(document.getElementById('capstone'))">× Close ×</div>
+        <div class="projectBody">
+            <img class="projectImgHor" src="work/capstone/eye-on-the-prize-banner.jpg">
+            <p class="project-info-banner">
+                <span class="skills-used">
+                    •&nbspUnity&nbsp&nbsp
+                    •&nbspC#&nbsp&nbsp
+                    •&nbspArduino
+                </span>
+                <a href="https://github.com/jfr9910rit/EyeOnThePrize" class="github-link">
+                    <img src="assets/media/github-logo.png">
+                    <span>Project Github</span>
+                </a>
+                <a href="https://www.instagram.com/trebeksintellects/" class="github-link">
+                    <img src="assets/media/instagram-logo.png">
+                    <span>Team Instagram</span>
+                </a>
+            </p>
+            <p>Eye On the Prize is a gameshow themed interactive exhibit where multiple players are invited to battle one another 
+                in a race to match the instructions given by the charismatic host, Simon.
+                It is an RIT New Media program capstone project that will be exhibited at 
+                <a href="https://www.rit.edu/imagine/" target="_blank" style="color: #f76900">Imagine RIT</a>, 
+                RIT's Creativity and Innovation Festival in 2025. 
+                It is also an ongoing collaboration with our client, the Strong National Museum of Play in Rochester, New York.</p>
+            <img class="projectImgHor" src="work/capstone/team.jpg">
+        </div>
+        <div class="closebtn" onclick="closePanel(document.getElementById('capstone'))">× Close ×</div>
+    </div>
+
+    <!-- protein 4 -->
+    <div class="panel" id="protein">
+        <div class="closebtn" onclick="closePanel(document.getElementById('protein'))">× Close ×</div>
+        <div class="projectBody">
+            <h1>Protein-4</h1>
+            <p class="skills-used"> 
+                •&nbspTouchDesigner&nbsp&nbsp
+                •&nbspExhibit&nbspDesign&nbsp&nbsp
+            </p>
+            <video class="projectImgHor" controls>
+                <source src="work/protein/protein-demo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <p>Protein-4 is an interactive digital exhibit that uses TouchDesigner to detect the color of a ball placed on a podium
+                and outputs different animations based on the color of the ball. Users can then influence the animations 
+                using simple gestures which are detected by an Xbox Kinect.
+            </p>
+            <h2>Sizzle Reel</h2>
+            <video class="projectImgVer" controls>
+                <source src="work/protein/BallsReelCapstone1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="closebtn" onclick="closePanel(document.getElementById('protein'))">× Close ×</div>
+    </div>
+
+    <!-- splat -->
+    <div class="panel" id="splat">
+        <div class="closebtn" onclick="closePanel(document.getElementById('splat'))">× Close ×</div>
+        <div class="projectBody">
+            <h1>Splat World</h1>
+            <p class="skills-used">
+                
+                •&nbspUnity&nbsp&nbsp
+                •&nbspC#&nbsp&nbsp
+                •&nbspUser Experience Design
+            </p>
+            <p>
+                <a href="https://github.com/mmr6424/Splat-World-Beta" class="github-link">
+                    <img src="assets/media/github-logo.png">
+                    <span>Project Github</span>
+                </a>
+            </p>
+            <p>Splat World is an AR game and social platform where players can create virual graffi artwork on the real walls around them.
+                I joined this ongoing project as the user interface and user experience designer.
+            </p>
+            <figure>
+                <div class="img-spread-container">
+                    <div class="img-spread">
+                        <img class="img-spread-item" src="work/splat/march_sc.jpg">
+                        <img class="img-spread-item" src="work/splat/march_sc_2.jpg">
+                    </div>
+                </div>
+            </figure>
+            <h2>Problem Identification and Iteration</h2>
+            <p>Coming into this project my first responsibility was reworking the existing UI to create a more cohesive user flow.
+                My first step was documenting problems and identifying possible solutions.
+            </p>
+            <p>I adopted a philosophy early on of "make nothing more than 3 taps away."</p>
+            <img class="projectImgHor" src="work/splat/problemidentification1.png">
+            <img class="projectImgHor" src="work/splat/problemidentification2.png">
+            <img class="projectImgHor" src="work/splat/changeproposalfinal.jpg">
+            
+            <h2>User Flow Planning</h2>
+            <p>Once some initial notes where taken on the existing UI, I worked with the team to create a comprehensive app layout that I would spend my remaining time in production developing</p>
+            <img class="projectImgSqr" src="work/splat/userflowmap.jpg">
+            <h2>New Interfaces</h2>
+            <figure>
+                <div class="img-spread-container">
+                    <div class="img-spread">
+                        <img class="img-spread-item" src="work/splat/drawui.gif">
+                        <img class="img-spread-item" src="work/splat/homeui.gif">
+                        <img class="img-spread-item" src="work/splat/crewui.gif">
+                    </div>
+                </div>
+            </figure>
+            <p>This project was placed on indefinate hiatus in 2024.</p>
+        </div>
+        <div class="closebtn" onclick="closePanel(document.getElementById('splat'))">× Close ×</div>
+    </div>
+
+    <!-- scribble -->
+    <div class="panel" id="scribble"> 
+        <div class="closebtn" onclick="closePanel(document.getElementById('scribble'))">× Close ×</div>
+        <div class="projectBody">
+            <h1>Scribble Club</h1>
+            <p class="skills-used">
+                
+                •&nbspHTML5 Canvas&nbsp&nbsp
+                •&nbspSocket.io&nbsp&nbsp
+                •&nbspNode.js&nbsp&nbsp
+                •&nbspExpress.js&nbsp&nbsp
+                •&nbspMobgoDB&nbsp&nbsp
+                •&nbspRedis
+            </p>
+            <p>
+                <a href="https://github.com/thomasismartinez/igme430-project-2/tree/master" class="github-link">
+                    <img src="assets/media/github-logo.png">
+                    <span>Project Github</span>
+                </a>
+            </p>
+            <p>Scribble Club is an Express.js web app utilizing Socket.io to create a social multiplayer experience, with monetization via in-game cosmetics accessible for a premium. Login information is stored and encrypted on a MongoDB server and user sessions are maintained using Redis.</p>
+            <iframe class="projectImgHor" src="https://www.youtube.com/embed/1qAm1-k7HlU?si=Ki13-ewZlixyKYlH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="closebtn" onclick="closePanel(document.getElementById('scribble'))">× Close ×</div>
+    </div>
+
+    <!-- Audio Visualizer -->
+    <div class="panel" id="audio">
+        <div class="closebtn" onclick="closePanel(document.getElementById('audio'))">× Close ×</div>
+        <div class="projectBody">
+            <h1>Audio Visualizer</h1>
+            <p class="skills-used">
+                
+                •&nbspJavascript&nbsp&nbsp
+                •&nbspHTML5 Canvas
+            </p>
+            <iframe src="https://people.rit.edu/~tjm7126/tjmartinez/audio-visualizer/" title="Audio Visualizer" class="projectImgHor"></iframe>
+            <p>If IFrame display isn't working well for you device try: <a href="https://people.rit.edu/~tjm7126/tjmartinez/audio-visualizer/" target="_blank">
+                visiting the site<img style="display:inline-block" src="assets/media/linkIcon.png"></a></a></p>
+            <p>For MOBILE USERS visit the site, rotate to landscape view, and then refresh the page.</p>
+        </div>
+        <div class="closebtn" onclick="closePanel(document.getElementById('audio'))">× Close ×</div>
+    </div>
+
+    <!-- mug -->
+    <div class="panel" id="mug">
+        <div class="closebtn" onclick="closePanel(document.getElementById('mug'))">× Close ×</div>
+        <div class="projectBody">
+            <h1>MUG Graphic Translation and Branding</h1>
+            <p class="skills-used">
+                
+                •&nbspGraphic Design&nbsp&nbsp
+                •&nbspBranding Design&nbsp&nbsp
+                •&nbspAdobe Illustrator
+            </p>
+            <img class="projectImgSqr" src="work/mug/justLockup.png">
+            <p>Branding and Lockup for an Imaginary Company: 'Mug Ceramics', a small and friendly ceramics shop near the town square in an old sleepy community.</p>
+            <h2>Original Image</h2>
+            <img class="projectImgSqr" src="work/mug/mugOG.jpg">
+            <p>The brandmark was created using a graphic translation of this mug found on <a href="https://unsplash.com/photos/zYs06jGwx7Y">Unsplashed.com</a>, 
+                a copyright safe image sourcing website.</p>
+            <h2>Explorations</h2>
+            <img class="projectImgHor" src="work/mug/mugExplorations.jpg">
+            <p>The final design was selected from a series of explorations of typography and layout.</p>
+            <h2>Finalization</h2>
+            <img class="projectImgSqr" src="work//mug/mugFinal.png">
+        </div>
+        <div class="closebtn" onclick="closePanel(document.getElementById('mug'))">× Close ×</div>
+    </div>
+
+    <!-- sleep 
+    <div class="panel" id="sleep">
+        <div class="closebtn" onclick="closePanel(document.getElementById('sleep'))">× Close ×</div>
+        <div class="projectBody">
+            <h1>Sleeping Disorder Advertisement</h1>
+            <div class="skills-used">
+                <h2>Skills Used</h2>
+                <ul>
+                    <li>Graphic Design</li>
+                    <li>Adobe Illustrator</li>
+                </ul>
+            </div>
+            <p>Design for a digital advertisement meant to grab user’s interest in sleeping disorders and get them to seek education and/or treatment.</p>
+            <img class="projectImgVer" src="work/sleep/SleepAd.png">
+            <p>I scanned a sketch of my own face and then used Adobe Illustrator to turn that into A vector image as well as add  color and text.</p>
+        </div>
+        <div class="closebtn" onclick="closePanel(document.getElementById('sleep'))">× Close ×</div>
+    </div> -->
+
+    <!-- signs 
+    <div class="panel" id="signs">
+        <div class="closebtn" onclick="closePanel(document.getElementById('signs'))">× Close ×</div>
+        <div class="projectBody">
+            <h1>29 Refinery Poster</h1>
+            <p class="skills-used">
+                •&nbspGraphic Design<br>
+                •&nbspAdobe Illustrator<br>
+            </p>
+            <img class="projectImgSqr" src="work/signs/signs.png">
+            <p>Illustration of the twelve zodiac signs represented as common lawn care equipment. Based upon the horoscopes created by 
+                <a href="https://www.refinery29.com/en-us">Refinery29</a>.</p>
+        </div>
+        <div class="closebtn" onclick="closePanel(document.getElementById('signs'))">× Close ×</div>
+    </div> -->
+
+    <!-- concert 
+    <div class="panel" id="concert">
+        <div class="closebtn" onclick="closePanel(document.getElementById('concert'))">× Close ×</div>
+        <div class="projectBody">
+            <h1>Prototype for Concert Advert</h1>
+            <img class="projectImgHor" src="work/concert/concert.png">
+            <p>Prototype of website/digital ad for a concert.</p>
+        </div>
+        <div class="closebtn" onclick="closePanel(document.getElementById('concert'))">× Close ×</div>
+    </div> -->
+
+    <!-- apitaph 
+    <div class="panel" id="apitaph">
+        <div class="closebtn" onclick="closePanel(document.getElementById('apitaph'))">× Close ×</div>
+        <div class="projectBody">
+            <h1>Photoshop Collage: 'Apitaph'</h1>
+            <img class="projectImgHor" src="work/apitaph/Apitaph.png">
+            <p>Simple Photoshop project using elements that I photographed: A posable action figure, brick wall, drum set, guitar, guitar amplifier, and microphone.</p>
+        </div>
+        <div class="closebtn" onclick="closePanel(document.getElementById('apitaph'))">× Close ×</div>
+    </div> -->
+
+    <!-- caiman 
+    <div class="panel" id="caiman">
+        <div class="closebtn" onclick="closePanel(document.getElementById('caiman'))">× Close ×</div>
+        <div class="projectBody">
+            <h1>Cosplay of Caiman from "Dorohedoro"</h1>
+            <img class="projectImgVer" src="work/caiman/caimanFull.png">
+            <p>Cosplay of the character Caiman from the 2002 manga ‘Dorohedoro’ By Hayashi Q. Caiman is a character whose head has been turned into a lizard’s 
+                and has a mysterious entity named 'Risu' who exists inside of his mouth.</p>
+            <p>The Head was created using green foam, 3D printed spines/teeth, hot glue, a balaclava as the base, 
+                and painted with Acrylic Paint. The design of the head was intended to represent myself inside the mouth as the entity “Risu.”</p>
+            <img class="projectImgHor" src="work/caiman/headCollage.png">
+            <p>The armor and knives were created using EVA foam, acrylic paint, and hot glue.</p>
+            <img class="projectImgHor" src="work/caiman/torsoCollage.png">
+        </div>
+        <div class="closebtn" onclick="closePanel(document.getElementById('caiman'))">× Close ×</div>
+    </div> -->
+
+    <!-- jd -->
+    <div class="panel" id="jd">
+        <div class="closebtn" onclick="closePanel(document.getElementById('jd'))">× Close ×</div>
+        <div class="projectBody">
+            <h1>Jelly Donut</h1>
+            <p class="skills-used">
+                
+                •&nbspGraphic Design&nbsp&nbsp
+                •&nbspUI/UX Design&nbsp&nbsp
+                •&nbspAdobe Illustrator&nbsp&nbsp
+                •&nbspAdobe Photoshop
+            </p>
+            <img class="projectImgHor" src="work/jd/jdAd.png">
+            <p>Prototype for an Anime, Manga, and Light Novel streaming service. 
+                It is a very common industry practice for Anime productions to be a direct adaptation of Manga or Light Novels (Short Books) or in some cases Manga or LN from Anime. 
+                Jelly Donut would function in a similar manner to a streaming service like Netflix or Crunchyroll, 
+                however it would include e-reader and video streaming functionality so that each series would be 
+                available to read/watch in all mediums which it has been adapted to.</p>
+            <p>The homepage is conventional for a streaming service, with catories of suggested series for the user. However it also includes 
+                filter buttons which allow the user to decide if they want to browse Anime, Manga, or Light Novels.
+                The app also allows users to follow specific series they are interested in for updates on new releases.</p>
+            <img class="projectImgHor" src="work/jd/jdScreens.png">
+            <p>It is very common for fans of a series to pick up the original work when an adaptation has not yet been finished. 
+                Jelly Donut is designed to aid the user in this regard. It keeps track of what a user has read/watched and then directs them
+                to corresponding chapters, volumes, or episodes in other versions of the series.</p>
+            <p>There are several limitations and further considerations to be had with this design and concept. For starters many adaptations may not align perfectly chronologically. 
+                While usually quite direct, adaptations may cut, move, or add new content compared to the original.
+                Additionally many series will have multiple adaptations within a given medium, Or an adaptation may completely diverge from its source material part-way through. 
+                However with further development I believe it could be novel and practical.</p>
+        </div>
+        <div class="closebtn" onclick="closePanel(document.getElementById('jd'))">× Close ×</div>
+    </div>
+
+    <div class="panel" id="phyllo">
+        <div class="closebtn" onclick="closePanel(document.getElementById('phyllo'))">× Close ×</div>
+        <div class="projectBody">
+            <h1>Phyllotaxis Zones</h1>
+            <p class="skills-used">
+                
+                •&nbspJavascript&nbsp&nbsp
+                •&nbspHTML5 Canvas
+            </p>
+            <iframe class="projectImgHor" src="https://www.youtube.com/embed/o0yBodM10ow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="closebtn" onclick="closePanel(document.getElementById('phyllo'))">× Close ×</div>
+    </div>
+
+    <!-- Brick Bulletin -->
+    <div class="panel" id="brick">
+        <div class="closebtn" onclick="closePanel(document.getElementById('brick'))">× Close ×</div>
+        <div class="projectBody">
+            <h1>Brick Bulletin</h1>
+            <p class="skills-used">
+                •&nbspC#<br>
+                •&nbspUI/UX<br>
+                •&nbspTeam Project<br>
+            </p>
+            <iframe class="projectImgHor" src="https://www.youtube.com/embed/XhdcFRUDfyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>As a team we designed and developed a digital announcement feed for campus events at the Rochester Institute of Technology. 
+                The main view functions similar to a social media feed. A user with an account can follow verified groups at RIT, 
+                who can post announcements that will appear in the feed of users who are followed to them or users who look them up.</p>
+
+                <h2>What I did:</h2>
+                <p>
+                    •&nbspDesigned and programmed main view functionality: homepage, single account view<br>
+                    •&nbspProgrammed and helped design user and follower functionality: guest login, user login, verified user login<br>
+                    •&nbspHelped to program functionality for, search, display settings, and login<br>
+                    •&nbspCoordinated and adapted programming from others to make each each feature work together
+                </p>
+        </div>
+        <div class="closebtn" onclick="closePanel(document.getElementById('brick'))">× Close ×</div>
+    </div>
+
+    <div class="panel" id="av">
+        <div class="closebtn" onclick="closePanel(document.getElementById('av'))">× Close ×</div>
+        <div class="projectBody">
+            <h1>Audio Visualizer</h1>
+            <p class="skills-used">
+                •&nbspJavascript<br>
+                •&nbspHTML5 Canvas<br>
+            </p>
+            <iframe src="https://people.rit.edu/~tjm7126/tjmartinez/audio-visualizer/" title="Audio Visualizer"></iframe>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div class="closebtn" onclick="closePanel(document.getElementById('av'))">× Close ×</div>
+    </div>
+    <canvas></canvas>
+
+    <script>
+        function openPanel(item) {
+            //item.style.display = "block";
+            item.style.height = "100vh";
+        }
+        
+        function closePanel(item) {
+            //item.style.display = "none";
+            item.style.height = "0";
+        }
+    </script>
+</body>
+</html>

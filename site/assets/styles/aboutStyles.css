@@ -1,0 +1,163 @@
+body {
+    line-height: 30px;
+    text-align: center;
+}
+
+#headLink {
+    line-height: 40px;
+}
+
+p {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.profilePicture {
+    width: 80%;
+}
+
+/*.profilePicture {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.profilePicture img{
+    width: 200px;
+    border-style: none;
+}*/
+
+h2 {
+    margin-left: 0;
+}
+
+/* contact-interface */
+#contact-interface {
+    padding: 5px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.contact-btn {
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+#mail-button { 
+    /*background-color: #68e368;*/
+    border-style: solid;
+    border-color: #68e368;
+}
+#phone-button { 
+    /*background-color: #fe6a6a;*/
+    border-style: solid;
+    border-color: #fe6a6a;
+}
+#in-button {
+    /*background-color: #fff;*/
+    border-style: solid;
+    border-color: #0077b7;
+}
+#mail-button-active { 
+    background-color: #68e368;
+    border-style: solid;
+    border-color: #68e368;
+}
+#phone-button-active { 
+    background-color: #fe6a6a;
+    border-style: solid;
+    border-color: #fe6a6a;
+}
+#in-button-active {
+    background-color: #0077b7;
+    border-style: solid;
+    border-color: #0077b7;
+}
+
+#mail-to-interface, #phone-to-interface, #in-interface {
+    display: none;
+    padding: 7px 20px;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+a.flaticon {
+    font-size: 13px;
+}
+
+.text-to-clip-board {
+    text-decoration: underline;
+}
+
+/*tooltip*/
+.tooltiptext {
+    visibility: hidden;
+    width: fit-content;
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+
+    font-size: 10px;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .text-to-clip-board:hover .tooltiptext, #phone-link:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .text-to-clip-board:hover,a:hover {
+    color: #fff;
+  }
+
+
+/* Desktop View */
+
+@media only screen and (min-width: 900px) {
+    body {
+        text-align: left;
+        line-height: 30px;
+    }
+
+    #about-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .profilePicture {
+        width: 30%;
+        float: left;
+        padding: 10px;
+    }
+
+    p {
+        padding: 10px;
+    }
+
+    p, #contact-interface {
+        font-size: 1.5em;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+    }
+
+    /*contact interface*/
+    #contact-interface {
+        width: 400px;
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>About Me</title>
+    <link rel="stylesheet" href="assets/styles/universalStyles.css">
+    <link rel="stylesheet" href="assets/styles/aboutStyles.css">
+    <script src="assets/src/main.js"></script>
+    <script src="assets/src/canvas.js" type="module"></script>
+    <!--script src="assets/src/contact-interface.js" type="module"></script-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/media/branding/icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--topbar (wordmark/nav)-->
+    <div class="navbar">
+        <a class="wordMarkLink" href="index.html">
+            <img src="assets/media/branding/lockupB.png">
+        </a>
+
+        <div class="dropdown">
+            <label for="touch" onclick="hamburgerx()"><span id="headLink">About Me ≡</span></label>          
+            <input type="checkbox" id="touch"> 
+            <div class="slide">
+                <a href="mywork.html">Portfolio</a>
+                <a href="resume.html">Resume</a>
+            </div>
+        </div>
+
+        <a class="page" href="mywork.html">Portfolio</a>
+        <a class="page" href="resume.html">Resume</a>
+        <a class="page active" href="aboutme.html">About&nbspMe</a>
+    </div>
+
+    <div class="main">
+
+        <div id="about-content">
+            <img src="assets/media/thomas.png" class="profilePicture">
+
+            <p>Thomas Martinez is an interactive media developer and student at the Rochester Institute of Technology working towards 
+                a bachelors in science in New Media Interactive Developement. 
+                He has a diverse set of skills in software dev, UI/UX design, web developement, art, graphic design, and is always learning more. 
+                He brings a user oriented approach that focuses on making an end product as intuitive and appealing as it is functional.
+            </p>
+        </div>
+        
+        <!-- Contact 
+        <h2>Contact</h2>
+        <div id="contact-interface">
+            <button class="contact-btn" id="mail-button"><img src="assets/media/MailIcon.png" width="25" alt="Send Thomas Martinez an Email Messege"></button>
+            <button class="contact-btn" id="phone-button"><img src="assets/media/PhoneIcon.png" width="25" alt="Call Thomas Martinez"></button>
+            <button class="contact-btn" id="in-button"><img src="assets/media/linkedin.png" width="25" alt="Thomas Martinez on LinkedIn"></button>
+            <div id="mail-to-interface">
+                <form method="post" name="myemailform" action="assets/src/form-to-email.php">
+                    Send Email To <span class="text-to-clip-board">tjm7126@rit.edu<span class="tooltiptext">Copy to clip board</span></span>:<br>
+                    From:<br><input type="text" name="name"><br>
+                    Email Address:<br><input type="text" name="email"><br><br>
+                    Your Message:<br><textarea name="message"></textarea><br>
+                    <input type="submit" value="Send Form">
+                </form>
+            </div>
+            <div id="phone-to-interface">
+                <a id="phone-link" href="tel:4107081221">410-708-1221<span class="tooltiptext">Call Thomas Martinez</span></a>
+            </div>
+            <div id="in-interface">
+                <a href="https://www.linkedin.com/in/tjmartinez088/" target="blank">Thomas Martinez on LinkedIn<br>
+                    <a class="flaticon" href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a>
+                </a>
+            </div>
+        </div> -->
+    </div>
+
+    <canvas></canvas>
+</body>
+</html>

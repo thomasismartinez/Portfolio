@@ -1,0 +1,150 @@
+* { margin: 0;}
+
+body {
+    /*text*/
+    background-color: whitesmoke;
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+}
+
+footer {
+  background-color: #333;
+  height: 60px;
+  width: 100%;
+}
+
+.text-to-clip-board {
+  cursor: pointer;
+}
+
+/*header styling*/
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.wordMarkLink {text-align: center;}
+.wordMarkLink img {width: 80vw;}
+
+a.page { display: none;}
+
+/*dropdown*/
+
+.dropdown {
+  background-color: #555555;
+  width: 100%;
+}
+
+#headLink {
+  color: white;
+  cursor : pointer;
+  display: block;
+  font-size: 35px;
+  transition: background-color .4s ease-out;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  clear: both;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  transition: height .4s ease;
+  padding: 0;
+}
+
+.slide a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  margin-top: 15px;
+}
+
+#touch {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}    
+
+#touch:checked + #headLink {background-color: black;}
+#touch:checked + .slide {height: 90px;}
+
+/*nav styling*/
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  margin: 20px 0 10px 0;
+}
+
+/* main styling*/
+.main {
+  margin-top: 30px;
+}
+
+/*canvas */
+canvas {
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  z-index:-1;
+}
+
+/* tablet/desktop view */
+@media only screen and (min-width: 600px) {
+  
+  .navbar {
+    flex-direction: row;
+    justify-content: left;
+    margin: 50px 50px;
+  }
+
+  .wordMarkLink { display: inline-block; }
+  .wordMarkLink img { width: 25vw; }
+
+  .dropdown { display: none;}
+
+  a.page {
+    display: block;
+    transition: all .2s ease-in-out;
+    color: #555555;
+    margin-left: 7vw;
+    font-size: 40px;
+    text-decoration: none;
+    transition: all .3s ease-in-out; 
+  }
+
+  a.page:hover {
+    color: black;
+    scale: 1.2;
+  }
+
+  a.page.active {
+    color: black;
+    scale: 1.4;
+    font-weight: bold;
+  }
+
+  h2 {
+    text-align: left;
+    font-size: 30px;
+    margin: 0 0 15px 15px;
+  }
+
+  .main {
+    margin: 70px 20%;
+  }
+}
