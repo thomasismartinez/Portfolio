@@ -1,4 +1,5 @@
-# tj-martinez.com
+# My Website
+## [tj-martinez.com](https://tj-martinez.com/)
 
 This is the repo for my personal website, which contains my contact information, portfolio, resume, and bio. 
 
