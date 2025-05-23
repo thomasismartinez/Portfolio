@@ -49,7 +49,7 @@
 
             <!-- capstone -->
             <div class="item" onclick="openPanel( document.getElementById('capstone') )">
-                <h3><span style="color:gold">In Production</span><br>Team Project<br>UI/UX<br>Physical Interface<br>Exhibit Design</h3>
+                <h3><span style="color:gold">RIT Capstone</span><br>Team Project<br>Programming<br>UI/UX<br>Physical Interface<br>Exhibit Design</h3>
                 <img class="preview" src="work/capstone/capstonePreview.jpg">
                 <h2>Eye On the Prize</h2>
             </div>
@@ -189,6 +189,10 @@
                     •&nbspC#&nbsp&nbsp
                     •&nbspArduino
                 </span>
+                <a href="https://eyeontheprizeimaginerit.framer.website/" class="github-link">
+                    <img src="assets/media/github-logo.png">
+                    <span>Project Website</span>
+                </a>
                 <a href="https://github.com/jfr9910rit/EyeOnThePrize" class="github-link">
                     <img src="assets/media/github-logo.png">
                     <span>Project Github</span>
@@ -204,7 +208,7 @@
                 <a href="https://www.rit.edu/imagine/" target="_blank" style="color: #f76900">Imagine RIT</a>, 
                 RIT's Creativity and Innovation Festival in 2025. 
                 It is also an ongoing collaboration with our client, the Strong National Museum of Play in Rochester, New York.</p>
-            <img class="projectImgHor" src="work/capstone/team.jpg">
+            <img class="projectImgHor" src="work/capstone/team.png">
         </div>
         <div class="closebtn" onclick="closePanel(document.getElementById('capstone'))">× Close ×</div>
     </div>
@@ -218,17 +222,26 @@
                 •&nbspTouchDesigner&nbsp&nbsp
                 •&nbspExhibit&nbspDesign&nbsp&nbsp
             </p>
-            <video class="projectImgHor" controls>
-                <source src="work/protein/protein-demo.mp4" type="video/mp4">
+            <video class="projectImgVerShort" controls>
+                <source src="work/protein/BallsReelCapstone1.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
             <p>Protein-4 is an interactive digital exhibit that uses TouchDesigner to detect the color of a ball placed on a podium
                 and outputs different animations based on the color of the ball. Users can then influence the animations 
                 using simple gestures which are detected by an Xbox Kinect.
             </p>
-            <h2>Sizzle Reel</h2>
-            <video class="projectImgVer" controls>
-                <source src="work/protein/BallsReelCapstone1.mp4" type="video/mp4">
+            <p>
+                My role as a developer was to help create the program in TouchDesigner that interprets the color of the ball placed at the center of the podium,
+                which works as follows:
+                <ul>
+                    <li>A plastic ball is placed over top a light thats set inside of the podium, causing the ball to illuminate.</li>
+                    <li>The illumination is detectected by a webcam place directly next to the ball, which feeds into a TouchDesigner program.</li>
+                    <li>The program uses multiple layers of visual filtering to turn the colors into raw data.</li>
+                    <li>This data is used to interpret the color of ball</li>
+                </ul>
+            </p>
+            <video class="projectImgHor" controls>
+                <source src="work/protein/protein-demo.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
         </div>
