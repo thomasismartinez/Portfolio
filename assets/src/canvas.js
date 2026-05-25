@@ -92,10 +92,9 @@ class Line {
 }
 
 function getRandomColor() {
-    // random # 1-3
-    /*
-    let c = Math.floor(Math.random() * 3) + 1;
-    switch (c) {
+    let h = Math.floor(Math.random() * 360);
+    return `HSL(${h},100,50)`;
+    /*switch (c) {
         case 1:
             //red
             return 'rgb(255,0,0)';
@@ -108,9 +107,7 @@ function getRandomColor() {
             //blue
             return 'rgb(0,0,255)';
             break;
-    }
-    */
-   return `rgb(${getRandomInt(0,100)},${getRandomInt(0,100)},200)`;
+    }*/
 }
 
 function getRandomInt(base,max) {

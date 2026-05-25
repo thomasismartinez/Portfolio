@@ -4,7 +4,7 @@ body {
     /*text*/
     background-color: whitesmoke;
     color: black;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Comic Sans MS', sans-serif;
     text-align: center;
 }
 
@@ -24,11 +24,11 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-top: 25px;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Comic Sans MS', sans-serif;
 }
 
 .wordMarkLink {text-align: center;}
-.wordMarkLink img {width: 80vw;}
+.wordMarkLink img {height: 25vh;}
 
 a.page { display: none;}
 
@@ -113,7 +113,7 @@ canvas {
   }
 
   .wordMarkLink { display: inline-block; }
-  .wordMarkLink img { width: 25vw; }
+  .wordMarkLink img { width: 10vw; }
 
   .dropdown { display: none;}
 

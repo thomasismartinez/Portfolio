@@ -17,11 +17,15 @@ body {
 }
 @keyframes slideBg {
     0% { background-image: url('../media/indexSlideShowM/1.png') }
-    16% { background-image: url('../media/indexSlideShowM/1.png') }
-    33% { background-image: url('../media/indexSlideShowM/2.png') }
-    49% { background-image: url('../media/indexSlideShowM/2.png') }
-    66% { background-image: url('../media/indexSlideShowM/3.png') }
-    82% { background-image: url('../media/indexSlideShowM/3.png') }
+    10% { background-image: url('../media/indexSlideShowM/1.png') }
+    20% { background-image: url('../media/indexSlideShowM/2.png') }
+    30% { background-image: url('../media/indexSlideShowM/2.png') }
+    40% { background-image: url('../media/indexSlideShowM/3.png') }
+    50% { background-image: url('../media/indexSlideShowM/3.png') }
+    60% { background-image: url('../media/indexSlideShowM/4.png') }
+    70% { background-image: url('../media/indexSlideShowM/4.png') }
+    80% { background-image: url('../media/indexSlideShowM/5.png') }
+    90% { background-image: url('../media/indexSlideShowM/5.png') }
     100% { background-image: url('../media/indexSlideShowM/1.png') }
 }
 
@@ -32,8 +36,8 @@ body {
     position: absolute;
     top: 0;
     z-index: -1;
-    background-color: black;
-    opacity: 0.8;
+    background-color: #111;
+    opacity: 0.9;
 }
 
 /* contact card */
@@ -43,13 +47,13 @@ body {
     margin-bottom: 5vh;
 }*/
 #wordmark  {
-    width: 80%;
+    height: 40%;
     margin: 3vh 0 1vh 0;
 }
 h2 {
     font-size: 1.2em; 
     margin-bottom: 3vh;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Comic Sans MS', sans-serif; /*Nunito Sans*/
     font-weight: bold;
 }
 a {
@@ -70,7 +74,7 @@ nav a {
     width: 80%;
     text-decoration: none;
     color: black;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Comic Sans MS', sans-serif;
     font-size: 1.5em;
     background-color: #edf2f4;
 }
@@ -86,11 +90,13 @@ nav a {
     }
     @keyframes slideBg {
         0% { background-image: url('../media/indexSlideShow/1.png') }
-        16% { background-image: url('../media/indexSlideShow/1.png') }
-        33% { background-image: url('../media/indexSlideShow/222.png') }
-        49% { background-image: url('../media/indexSlideShow/222.png') }
-        66% { background-image: url('../media/indexSlideShow/33.png') }
-        82% { background-image: url('../media/indexSlideShow/33.png') }
+        12% { background-image: url('../media/indexSlideShow/1.png') }
+        25% { background-image: url('../media/indexSlideShow/222.png') }
+        37% { background-image: url('../media/indexSlideShow/222.png') }
+        50% { background-image: url('../media/indexSlideShow/33.png') }
+        67% { background-image: url('../media/indexSlideShow/33.png') }
+        75% { background-image: url('../media/indexSlideShow/4444.png') }
+        87% { background-image: url('../media/indexSlideShow/4444.png') }
         100% { background-image: url('../media/indexSlideShow/1.png') }
     }
 
@@ -100,8 +106,8 @@ nav a {
         margin-bottom: 7vh;
     }*/
     #wordmark {
-        width: 60%;
-        margin-bottom: 0;
+        height: 40vh;
+        margin-bottom: 5vh;
     }
     h2 {
         font-size: 1.5vw; 
@@ -134,8 +140,9 @@ nav a {
         border-radius: 0;
         font-size: 2.3em;
         border-radius: 3px;
-        background-color: #555555;
-        color: white;
+        /*background-color: #555555;*/
+        background-image: url('../media/indexPageCards/spiral.gif');
+        /*color: white;*/
         font-weight: bold;
     }
     /*
