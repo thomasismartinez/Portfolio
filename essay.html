@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Resume</title>
+    <link rel="stylesheet" href="assets/styles/universalStyles.css">
+    <link rel="stylesheet" href="assets/styles/resumeStyles.css">
+    <script src="assets/src/main.js"></script>
+    <script src="assets/src/canvas.js" type="module"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/media/branding/icon.png">
+</head>
+<body>
+
+    <!--topbar (wordmark/nav)-->
+    <div class="navbar">
+        <a class="wordMarkLink" href="index.html">
+            <img src="assets/media/branding/meB.png">
+        </a>
+
+        <div class="dropdown">
+            <label for="touch" onclick="hamburgerx()"><span id="headLink">Resume ≡</span></label>               
+            <input type="checkbox" id="touch"> 
+            <div class="slide">
+                <a href="mywork.html">Portfolio</a>
+                <a href="aboutme.html">About&nbspMe</a>
+            </div>
+        </div>
+
+        <a class="page" href="mywork.html">Portfolio</a>
+        <a class="page" href="resume.html">Resume</a>
+        <a class="page" href="aboutme.html">About&nbspMe</a>
+    </div>
+
+    <div class="main">
+        <embed id="resumePDF" src="work/theessay.pdf">
+        <h2><a id="pdfExpand" href="work/theessay.pdf" target="_blank">Download <img style="display:inline-block" src="assets/media/linkIcon.png"></a></h2>
+        <div style="text-align: left;">
+            <h2> Accolades for: "An Intentionalist Analysis of Breakfast of Champions"</h2>
+            <br>
+            <ul>
+                <li>"Rarely do I want a student paper to continue further than the alloted space, I did with yours just to give you an idea of how much I liked it. 
+                    The way you used Vonnegut's work, how you draw from the ideas of Sontag, Foucault, and Nehemas was very creative and completely pertinent..." - My Professor</li>
+                <br>
+                <li>"Its not good and you're a fraud." - The man in my head</li>
+            </ul>
+        </div>
+    </div>
+
+    <canvas></canvas>
+</body>
+</html>
